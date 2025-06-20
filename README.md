@@ -27,3 +27,8 @@ Responsibilities: Tests the application for functionality, reports bugs, and ens
 Responsibilities: Defines project scope, coordinates teams, and aligns development with business goals.
 7. UI/UX Designer
 Responsibilities: Designs user interfaces, conducts research, and ensures a great user experience.
+
+**Technology Stack**
+Django: A web framework for building RESTful APIs and managing backend logic efficiently.
+MySQL: A robust relational database management system for storing and retrieving user data and property listings.
+RESTful APIs: Architectural style for designing networked applications, allowing communication between the frontend and backend.
