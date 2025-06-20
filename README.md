@@ -13,25 +13,20 @@ Django
 MySQL
 
 **Team Roles**
-1. Backend Developer
-Responsibilities: Develops server-side logic, APIs, and ensures application security.
-2. Frontend Developer
-Responsibilities: Builds user interface, integrates APIs, and optimizes performance.
-3. Database Administrator (DBA)
-Responsibilities: Manages database design, integrity, and optimization.
-4. DevOps Engineer
-Responsibilities: Sets up CI/CD pipelines, monitors infrastructure, and manages deployments.
-5. Quality Assurance (QA) Engineer
-Responsibilities: Tests the application for functionality, reports bugs, and ensures quality.
-6. Product Manager
-Responsibilities: Defines project scope, coordinates teams, and aligns development with business goals.
-7. UI/UX Designer
-Responsibilities: Designs user interfaces, conducts research, and ensures a great user experience.
+Backend Developer: Responsible for implementing API endpoints, database schemas, and business logic.
+Database Administrator: Manages database design, indexing, and optimizations.
+DevOps Engineer: Handles deployment, monitoring, and scaling of the backend services.
+QA Engineer: Ensures the backend functionalities are thoroughly tested and meet quality standards.
 
 **Technology Stack**
-Django: A web framework for building RESTful APIs and managing backend logic efficiently.
-MySQL: A robust relational database management system for storing and retrieving user data and property listings.
-RESTful APIs: Architectural style for designing networked applications, allowing communication between the frontend and backend.
+Django: A high-level Python web framework used for building the RESTful API.
+Django REST Framework: Provides tools for creating and managing RESTful APIs.
+PostgreSQL: A powerful relational database used for data storage.
+GraphQL: Allows for flexible and efficient querying of data.
+Celery: For handling asynchronous tasks such as sending notifications or processing payments.
+Redis: Used for caching and session management.
+Docker: Containerization tool for consistent development and deployment environments.
+CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
 
 **Database Design**
 **User**
@@ -81,3 +76,53 @@ Property ↔ Booking: A booking belongs to one property, but a property can have
 User ↔ Review: A user can write multiple reviews (one-to-many).
 Property ↔ Review: A property can have multiple reviews (one-to-many).
 Booking ↔ Payment: A payment is associated with one booking (one-to-one).
+
+**Feature breakdowm**
+User Management: Implement a secure system for user registration, authentication, and profile management.
+Property Management: Develop features for property listing creation, updates, and retrieval.
+Booking System: Create a booking mechanism for users to reserve properties and manage booking details.
+Payment Processing: Integrate a payment system to handle transactions and record payment details.
+Review System: Allow users to leave reviews and ratings for properties.
+Data Optimization: Ensure efficient data retrieval and storage through database optimizations.
+
+**API Security**
+
+**Key Security Measures**
+***Authentication***
+Description: Users must verify their identity using secure methods (e.g., email/password, JWT tokens).
+Importance: Ensures that only authorized users can access their accounts and personal information, protecting against unauthorized access.
+
+***Authorization***
+Description: Role-based access control (RBAC) will be implemented to restrict access to certain endpoints based on user roles (e.g., guest vs. host).
+Importance: Prevents users from accessing or modifying data they are not permitted to, ensuring data integrity and security.
+
+***Rate Limiting***
+Description: Limits the number of requests a user can make to the API in a given time frame.
+Importance: Protects against abuse and denial-of-service attacks by preventing excessive requests from a single user.
+
+***Data Encryption***
+Description: Sensitive data, such as passwords and payment information, will be encrypted both in transit (using HTTPS) and at rest.
+Importance: Protects user data from interception and unauthorized access, ensuring confidentiality.
+
+***Input Validation and Sanitization***
+Description: All user inputs will be validated and sanitized to prevent injection attacks (e.g., SQL injection, XSS).
+Importance: Reduces the risk of malicious input compromising the application or database.
+
+**Security Importance by Key Area**
+***User Authentication***
+Crucial for: Protecting user accounts and personal information from unauthorized access. A breach can lead to identity theft or misuse of user data.
+
+***Property Management***
+Crucial for: Securing sensitive data related to property listings. Unauthorized access can lead to data manipulation or fraudulent listings.
+
+***Booking System***
+Crucial for: Ensuring the integrity of booking data. Unauthorized changes can disrupt bookings, leading to user dissatisfaction and financial loss.
+
+***Payment Processing***
+Crucial for: Protecting payment information during transactions. Security breaches can result in financial theft and loss of user trust.
+
+***Review System***
+Crucial for: Maintaining the authenticity of reviews. Fake reviews can mislead users and damage the reputation of legitimate properties.
+
+***Database Optimizations***
+Crucial for: Ensuring efficient and secure access to data. Poorly optimized databases can lead to vulnerabilities and performance issues, making them easier targets for attacks.
