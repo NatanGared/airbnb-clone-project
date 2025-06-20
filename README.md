@@ -77,7 +77,7 @@ User ↔ Review: A user can write multiple reviews (one-to-many).
 Property ↔ Review: A property can have multiple reviews (one-to-many).
 Booking ↔ Payment: A payment is associated with one booking (one-to-one).
 
-**Feature breakdowm**
+**Feature Breakdown**
 User Management: Implement a secure system for user registration, authentication, and profile management.
 Property Management: Develop features for property listing creation, updates, and retrieval.
 Booking System: Create a booking mechanism for users to reserve properties and manage booking details.
