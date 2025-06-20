@@ -11,3 +11,19 @@ User Reviews: Enable users to leave reviews and ratings for properties.
 **Tech Stack**
 Django
 MySQL
+
+**Team Roles**
+1. Backend Developer
+Responsibilities: Develops server-side logic, APIs, and ensures application security.
+2. Frontend Developer
+Responsibilities: Builds user interface, integrates APIs, and optimizes performance.
+3. Database Administrator (DBA)
+Responsibilities: Manages database design, integrity, and optimization.
+4. DevOps Engineer
+Responsibilities: Sets up CI/CD pipelines, monitors infrastructure, and manages deployments.
+5. Quality Assurance (QA) Engineer
+Responsibilities: Tests the application for functionality, reports bugs, and ensures quality.
+6. Product Manager
+Responsibilities: Defines project scope, coordinates teams, and aligns development with business goals.
+7. UI/UX Designer
+Responsibilities: Designs user interfaces, conducts research, and ensures a great user experience.
