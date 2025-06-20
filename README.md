@@ -13,12 +13,14 @@ Django
 MySQL
 
 **Team Roles**
+
 Backend Developer: Responsible for implementing API endpoints, database schemas, and business logic.
 Database Administrator: Manages database design, indexing, and optimizations.
 DevOps Engineer: Handles deployment, monitoring, and scaling of the backend services.
 QA Engineer: Ensures the backend functionalities are thoroughly tested and meet quality standards.
 
 **Technology Stack**
+
 Django: A high-level Python web framework used for building the RESTful API.
 Django REST Framework: Provides tools for creating and managing RESTful APIs.
 PostgreSQL: A powerful relational database used for data storage.
@@ -29,6 +31,7 @@ Docker: Containerization tool for consistent development and deployment environm
 CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
 
 **Database Design**
+
 **User**
 ***Important Fields***
 user_id: Unique identifier for the user.
@@ -126,3 +129,24 @@ Crucial for: Maintaining the authenticity of reviews. Fake reviews can mislead u
 
 ***Database Optimizations***
 Crucial for: Ensuring efficient and secure access to data. Poorly optimized databases can lead to vulnerabilities and performance issues, making them easier targets for attacks.
+
+**CI/CD Pipeline**
+
+Continuous Integration (CI) and Continuous Deployment (CD) pipelines are automated processes that facilitate the integration of code changes and the deployment of applications.
+Continuous Integration (CI): Involves automatically testing and integrating code changes into a shared repository. This ensures that code changes are validated and do not break the existing application.
+Continuous Deployment (CD): Automates the release of software updates to production environments after passing all tests, allowing new features and fixes to be delivered quickly and reliably.
+
+***Importance for the Project***
+
+Faster Development Cycle: Automates testing and deployment, allowing developers to focus on writing code rather than manual processes.
+Early Bug Detection: CI helps identify integration issues early, reducing the cost and time needed to resolve them.
+Consistent Deployments: CD ensures that deployments are reproducible and consistent, minimizing the risk of errors during release.
+Improved Collaboration: Facilitates collaboration among team members by providing a clear process for integrating and deploying code changes.
+
+***Tools for CI/CD***
+
+GitHub Actions: Automates workflows directly from GitHub, allowing for seamless integration and deployment processes.
+Docker: Used to containerize applications, ensuring consistency across different environments during testing and deployment.
+Jenkins: An open-source automation server that supports building, deploying, and automating software development processes.
+Travis CI: A cloud-based CI service that integrates with GitHub repositories, providing automated testing and deployment.
+CircleCI: A CI/CD tool that automates the integration and delivery pipeline, easily integrating with various version control systems.
